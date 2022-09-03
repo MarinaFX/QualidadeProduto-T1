@@ -10,5 +10,3 @@ function parserAge2Days(numberOfDays) {
 }
 
 module.exports = parserAge2Days
-
-// console.log(parserAge2Days(400));
