@@ -6,6 +6,10 @@ function parserAge2Days(numberOfDays) {
   let months = Math.floor((numberOfDays % yearToDay) / monthInDays);
   let days = Math.floor((numberOfDays % yearToDay) % monthInDays);
 
+  return formattPrint(years, months, days)
+}
+
+function formattPrint(years, months, days) {
   return `\n ${years} ano(s) \n ${months} mes(es) \n ${days} dia(s)`
 }
 
