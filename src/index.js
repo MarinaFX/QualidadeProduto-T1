@@ -1,14 +1,14 @@
-function parser(numberOfDays) {
-  var years = Math.floor(numberOfDays / 365);
-  var months = Math.floor((numberOfDays % 365) / 30);
-  var days = Math.floor((numberOfDays % 365) % 30);
+function parserAge2Days(numberOfDays) {
+  const yearToDay = 365;
+  const monthInDays = 30;
 
-  var yearsDisplay =
-    years > 0 ? years + (years == 1 ? " year, " : " years, ") : "";
-  var monthsDisplay =
-    months > 0 ? months + (months == 1 ? " month, " : " months, ") : "";
-  var daysDisplay = days > 0 ? days + (days == 1 ? " day" : " days") : "";
-  return yearsDisplay + monthsDisplay + daysDisplay;
+  let years = Math.floor(numberOfDays / yearToDay);
+  let months = Math.floor((numberOfDays % yearToDay) / monthInDays);
+  let days = Math.floor((numberOfDays % yearToDay) % monthInDays);
+
+  return `\n ${years} ano(s) \n ${months} mes(es) \n ${days} dia(s)`
 }
 
-console.log(parser(730));
+module.exports = parserAge2Days
+
+// console.log(parserAge2Days(400));
