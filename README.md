@@ -1,5 +1,7 @@
 # [Age in Days](https://www.beecrowd.com.br/judge/en/problems/view/1020) 
 
+[![CI](https://github.com/MarinaFX/QualidadeProduto-T1/actions/workflows/jobs.yml/badge.svg)](https://github.com/MarinaFX/QualidadeProduto-T1/actions/workflows/jobs.yml)
+
 ## Overview
 
 Read an integer value corresponding to a person's age (in days) and print it in years, months and days, followed by its respective message “ano(s)”, “mes(es)”, “dia(s)”.
